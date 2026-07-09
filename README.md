@@ -1,81 +1,51 @@
 # 🎮 Steam Game Recommendation
 
+<br>
+
 ## 📌 1. Project Summary (프로젝트 요약)
 
-Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한국어 사용자 리뷰를 수집한 뒤, 사용자가 입력한 게임명 또는 연관 검색어를 바탕으로 유사한 게임을 추천하는 Python 기반 게임 추천 시스템입니다.
+Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한국어 사용자 리뷰를 수집한 뒤, 사용자가 입력한 게임명 또는 연관 검색어를 바탕으로 유사한 게임을 추천하는 게임 추천 시스템입니다.
 
-한국어 리뷰 텍스트를 KoNLPy Okt로 형태소 분석하고, TF-IDF와 Word2Vec을 함께 사용하여 게임 간 유사도를 계산합니다.
-또한 Steam 태그, 카테고리, 긍정 리뷰, 평가 점수 등을 함께 반영하여 단순 키워드 검색보다 추천 품질을 높이는 것을 목표로 했습니다.
-
-| 구분     | 내용                                      |
-| ------ | --------------------------------------- |
-| 프로젝트명  | Steam Korean Review Game Recommendation |
-| 주제     | Steam 한국어 리뷰 기반 게임 추천 시스템               |
-| 실행 앱   | `job07_pyqt5_steam_recommender.py`      |
-| 주요 데이터 | Steam 한국어 지원 게임 목록, 게임 상세 정보, 한국어 리뷰    |
-| 추천 방식  | 키워드 기반 추천 / 특정 게임 기반 추천                 |
-| 주요 모델  | TF-IDF, Word2Vec, Cosine Similarity     |
-| UI     | PyQt5 Desktop GUI                       |
-
----
+<br>
 
 ## 2. Key Features (주요 기능)
 
 ### 2.1 Steam Korean Review Crawling (Steam 한국어 리뷰 수집)
-
-* Steam에서 한국어를 지원하는 게임 목록 수집
-* 게임별 상세 정보, 장르, 태그, 카테고리, 출시 연도 수집
+* Steam에서 한국어를 지원하는 게임 목록, 게임별 상세 정보, 장르, 태그, 카테고리, 출시 연도 수집
 * Steam Review API를 이용해 한국어 리뷰 수집
-* 수집 진행 상황을 CSV로 저장하여 중단 후 재실행 가능
 
 ### 2.2 Korean NLP Preprocessing (한국어 자연어 전처리)
-
 * 리뷰 텍스트에서 URL, HTML 특수문자, 불필요한 기호 제거
-* KoNLPy Okt 형태소 분석 사용
-* 명사, 동사, 형용사, 영어 토큰 중심으로 추출
 * 게임 추천에 중요한 단어가 불용어로 제거되지 않도록 보호 단어 설정
-* 긴 리뷰 문서는 chunk 단위로 나누어 Java heap memory 오류 방지
 
 ### 2.3 TF-IDF Vectorization (문서 벡터화)
-
 * 게임 1개를 하나의 추천용 문서로 구성
 * 긍정 리뷰, 태그, 카테고리를 각각 TF-IDF 벡터로 변환
-* 키워드 기반 추천과 특정 게임 기반 추천에서 서로 다른 가중치 적용
 * 입력 문장과 게임 문서 간 코사인 유사도 계산
 
 ### 2.4 Word2Vec Semantic Matching (의미 기반 추천)
-
 * 전체 리뷰, 태그, 카테고리 토큰을 기반으로 Word2Vec 모델 학습
-* 단어가 정확히 일치하지 않아도 문맥상 가까운 단어 관계를 일부 반영
 * 게임별 평균 Word2Vec 벡터를 생성하여 게임 간 의미 유사도 계산
 
 ### 2.5 Hybrid Recommendation (혼합 추천 점수)
-
-* TF-IDF 유사도
-* Word2Vec 유사도
-* Steam 평가 점수 보정값
-
-위 세 가지를 함께 반영하여 최종 추천 점수를 계산합니다.
+* "TF-IDF 유사도", "Word2Vec 유사도", "Steam 평가 점수 보정값" 세 가지를 함께 반영하여 최종 추천 점수를 계산
 
 ### 2.6 PyQt5 GUI (추천 UI)
 
-* 좋아하는 게임 선택 기반 추천
-* 연관 검색어 입력 기반 추천
-* 최대 3개 태그 필터 적용
+* 좋아하는 게임 선택, 연관 검색어 입력 기반 추천
+* 최대 3개 태그 필터와 최소 출시 연도 필터 적용
 * 추천 개수 설정
-* 최소 출시 연도 필터 적용
 * 추천 결과 클릭 시 상세 정보 표시
 * Steam 페이지 바로가기 기능 제공
 
----
+<br>
 
 ## 3. Tech Stack (기술 스택)
-
 ### 3.1 Language
 
-| 기술     | 역할                           |
-| ------ | ---------------------------- |
-| Python | 전체 데이터 수집, 전처리, 모델 학습, UI 구현 |
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge">
+
+<br>
 
 ### 3.2 Data Processing / AI
 
@@ -99,6 +69,8 @@ Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한
 | QDesktopServices | Steam 페이지 바로가기 실행             |
 
 ---
+
+<br>
 
 ## 4. Project Structure (프로젝트 구조)
 
