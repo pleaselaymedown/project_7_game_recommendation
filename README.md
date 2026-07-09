@@ -133,7 +133,7 @@ project_7_game_recommendation/
 좋다, 재밌다, 추천, 비추천, 갓겜, 망겜
 ```
 
----
+<br>
 
 ### 5.3 TF-IDF Model
 
@@ -146,6 +146,7 @@ project_7_game_recommendation/
 | `categories`       | Steam 카테고리 전처리 텍스트       |
 | `model_text`       | 긍정 리뷰 + 태그 + 카테고리 통합 텍스트 |
 
+<br>
 
 ### 5.4 Word2Vec Model
 
