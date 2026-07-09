@@ -1,8 +1,8 @@
-# 🎮 Steam Korean Review Game Recommendation
+# 🎮 Steam Game Recommendation
 
-## 1. Project Summary (프로젝트 요약)
+## 📌 1. Project Summary (프로젝트 요약)
 
-Steam Korean Review Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한국어 사용자 리뷰를 수집한 뒤, 사용자가 입력한 게임명 또는 연관 검색어를 바탕으로 유사한 게임을 추천하는 Python 기반 게임 추천 시스템입니다.
+Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한국어 사용자 리뷰를 수집한 뒤, 사용자가 입력한 게임명 또는 연관 검색어를 바탕으로 유사한 게임을 추천하는 Python 기반 게임 추천 시스템입니다.
 
 한국어 리뷰 텍스트를 KoNLPy Okt로 형태소 분석하고, TF-IDF와 Word2Vec을 함께 사용하여 게임 간 유사도를 계산합니다.
 또한 Steam 태그, 카테고리, 긍정 리뷰, 평가 점수 등을 함께 반영하여 단순 키워드 검색보다 추천 품질을 높이는 것을 목표로 했습니다.
