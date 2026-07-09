@@ -248,6 +248,7 @@ UI 실행 화면 예시
 ## 🎬 8. Demonstration (시연 영상)
 
 <img src="./images/youtube.png" width="700">
+
 ### *이미지를 클릭하면 시연 영상으로 이동합니다.*
 
 <br>
