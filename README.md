@@ -201,7 +201,7 @@ final_score
 | Word2Vec Score | 0.20 |
 | Review Score   | 0.20 |
 
----
+<br>
 
 ### 6.2 Similar Game Based Recommendation
 
@@ -243,7 +243,7 @@ UI 실행 화면 예시
 <img src="./images/UI.png" width="1000">
 
 <br>
-
+<br>
 
 ## 🎬 8. Demonstration (시연 영상)
 
@@ -268,6 +268,8 @@ UI 실행 화면 예시
 **✅ 결과**
 - 추천에 영향을 주는 핵심 단어는 유지할 수 있게 되어 리뷰의 추천 품질이 개선됨
 
+<br>
+
 ### ⚠️ 9.2 Okt 형태소 분석 중 Java heap memory 오류 발생
 
 **🔍 문제 상황**
@@ -281,6 +283,8 @@ UI 실행 화면 예시
 
 **✅ 결과**
 - 메모리 사용량이 줄어들어 전체 리뷰 전처리 과정을 정상적으로 완료할 수 있게 됨
+
+<br>
 
 ### ⚠️ 9.3 특정 게임 기반 / 키워드 기반의 추천 점수 차이
 
