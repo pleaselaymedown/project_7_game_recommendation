@@ -8,7 +8,7 @@ Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한
 
 <br>
 
-## 2. Key Features (주요 기능)
+## ✨ 2. Key Features (주요 기능)
 
 ### 2.1 Steam Korean Review Crawling (Steam 한국어 리뷰 수집)
 * Steam에서 한국어를 지원하는 게임 목록, 게임별 상세 정보, 장르, 태그, 카테고리, 출시 연도 수집
@@ -40,12 +40,10 @@ Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한
 
 <br>
 
-## 3. Tech Stack (기술 스택)
+## 🛠️ 3. Tech Stack (기술 스택)
 ### 3.1 Language
 
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge">
-
-<br>
 
 ### 3.2 Data Processing / AI
 
@@ -72,7 +70,7 @@ Steam Game Recommendation은 Steam에서 한국어를 지원하는 게임과 한
 
 <br>
 
-## 4. Project Structure (프로젝트 구조)
+## 📂 4. Project Structure (프로젝트 구조)
 
 ```text
 project_7_game_recommendation/
@@ -99,7 +97,7 @@ project_7_game_recommendation/
 └── job07_pyqt5_steam_recommender.py               # PyQt5 추천 UI 실행 파일
 ```
 
----
+<br>
 
 ## 5. Data & AI Pipeline (데이터 처리 흐름)
 
